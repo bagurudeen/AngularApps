@@ -1,0 +1,17 @@
+<table class="table table-striped">
+  <thead>
+    <th>DepartmentID</th>
+    <th>Department Name</th>
+    <th>Options</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dep of departments" >
+      <td> {{dep.departmentID}} </td>
+      <td> {{dep.departmentName}} </td>
+      <td> 
+        <button class="btn btn-light mr-1">Edit</button>
+        <button class="btn btn-light mr-1">Delete</button>
+       </td>
+    </tr>
+  </tbody>
+</table>
